@@ -3,7 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JM Digital Marketing</title>
+<title>JM Digital Marketing | Websites, Google Ads &amp; SEO for UK Businesses</title>
+<meta name="description" content="JM Digital Marketing builds fast, mobile-friendly websites and Google Business Profiles for UK car recovery firms, dental clinics and local businesses. Free demo, live in 2 days, from £150 one-off. Smart Solutions. Real Results.">
+<!-- Site URL: if a custom domain is connected later, replace https://jm-digital-marketing.vercel.app/ here, in sitemap.xml and in robots.txt -->
+<link rel="canonical" href="https://jm-digital-marketing.vercel.app/">
+<meta name="theme-color" content="#0a0714">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JM Digital Marketing">
+<meta property="og:locale" content="en_GB">
+<meta property="og:url" content="https://jm-digital-marketing.vercel.app/">
+<meta property="og:title" content="JM Digital Marketing | Smart Solutions. Real Results.">
+<meta property="og:description" content="Websites, Google Business Profiles and Google Ads that turn searches into calls, jobs and bookings for UK local businesses.">
+<meta property="og:image" content="https://jm-digital-marketing.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="JM Digital Marketing logo — Smart Solutions. Real Results.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JM Digital Marketing | Smart Solutions. Real Results.">
+<meta name="twitter:description" content="Websites, Google Business Profiles and Google Ads that turn searches into calls, jobs and bookings for UK local businesses.">
+<meta name="twitter:image" content="https://jm-digital-marketing.vercel.app/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -106,7 +127,9 @@ header.nav{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);-webkit-b
   background:radial-gradient(closest-side,rgba(0,0,0,.6),transparent);z-index:0}
 .walk-src{position:absolute;width:2px;height:2px;opacity:0;pointer-events:none}
 @media (prefers-reduced-motion:reduce){.founder{animation:none}}
-.stats{display:flex;flex-wrap:wrap;gap:14px 44px;margin-top:52px;padding-top:26px;border-top:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 32px;margin-top:52px;padding-top:26px;border-top:1px solid var(--line)}
+@media (max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stat span{display:block;margin-top:6px;line-height:1.4}
 .stat b{display:block;font-family:var(--display);font-weight:400;font-size:44px;line-height:1;font-variant-numeric:tabular-nums}
 .stat span{font-size:13px;color:var(--mute)}
 @media (max-width:900px){
@@ -235,8 +258,76 @@ form .btn{justify-content:space-between;width:100%;padding:17px 22px}
 form small{color:var(--mute);font-size:12.5px;text-align:center}
 @media (max-width:860px){.contact{grid-template-columns:1fr}.f2{grid-template-columns:1fr}}
 
-footer{border-top:1px solid var(--line);padding:28px 0;background:rgba(10,7,20,.7);font-size:13px;color:var(--mute)}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+.direct a{text-decoration:none;font-size:22px;font-family:var(--display);font-variant-numeric:tabular-nums;overflow-wrap:anywhere;transition:color .2s}
+.direct a:hover{color:var(--ice)}
+.direct b:not(:first-child){margin-top:12px}
+
+/* pricing */
+.price-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+.plan{position:relative;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:30px 28px;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.plan.pop{border-color:rgba(184,102,255,.7);box-shadow:0 18px 50px rgba(124,22,240,.28)}
+.plan .badge{position:absolute;top:-12px;left:28px;font:600 10.5px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#fff;
+  background:linear-gradient(135deg,#7410ee,#b44bff);padding:6px 12px;border-radius:999px}
+.plan h3{font-size:32px;line-height:1.05}
+.plan .price{margin:18px 0 6px;display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 8px}
+.plan .price b{font-family:var(--display);font-weight:400;font-size:56px;line-height:1;font-variant-numeric:tabular-nums}
+.plan .price span{color:var(--mute);font-size:14.5px}
+.plan .line{color:var(--text);font-size:15.5px}
+.plan ul{list-style:none;margin:20px 0 26px;padding:0;display:grid;gap:10px}
+.plan li{display:flex;gap:12px;font-size:14.5px;color:var(--mute);padding-top:10px;border-top:1px solid var(--line)}
+.plan li::before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--signal);margin-top:9px}
+.plan .btn{margin-top:auto;justify-content:space-between}
+.fine{margin-top:26px;color:var(--mute);font-size:14px}
+@media (max-width:960px){.price-grid{grid-template-columns:1fr;max-width:520px}}
+
+/* hero points */
+.points{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:10px 22px;font-size:14px;color:var(--mute)}
+.points li{display:flex;align-items:center;gap:8px}
+.points li::before{content:"✓";color:var(--signal);font-weight:700}
+
+/* work screenshot */
+.shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top left;display:block}
+.work-grid.single{grid-template-columns:minmax(0,1fr);max-width:760px}
+
+/* mobile menu */
+.menu-btn{all:unset;box-sizing:border-box;display:none;cursor:pointer;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);
+  place-items:center;flex:none}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{display:block;width:18px;height:2px;border-radius:2px;background:var(--text);position:relative;transition:transform .25s,background .25s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded="true"] span{background:transparent}
+.menu-btn[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.menu-btn:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+.nav-right{display:flex;align-items:center;gap:10px}
+.mobile-menu{display:none;border-top:1px solid var(--line);background:rgba(10,7,20,.96)}
+.mobile-menu[data-open="true"]{display:block}
+.mobile-menu .wrap{display:grid;gap:4px;padding-block:14px 20px}
+.mobile-menu a:not(.btn){text-decoration:none;padding:12px 4px;font-size:16px;border-bottom:1px solid var(--line)}
+.mobile-menu .btn{margin-top:14px;justify-content:space-between}
+@media (max-width:820px){.menu-btn{display:grid}}
+@media (min-width:821px){.mobile-menu{display:none !important}}
+@media (max-width:560px){.nav-right>.btn{display:none}}
+
+/* floating WhatsApp */
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;
+  background:#25d366;color:#fff;box-shadow:0 10px 28px rgba(0,0,0,.45);transition:transform .25s,opacity .25s}
+.wa-float:hover{transform:translateY(-2px)}
+.wa-float svg{width:30px;height:30px}
+.wa-float.is-hidden{opacity:0;pointer-events:none;transform:translateY(8px)}
+
+footer{border-top:1px solid var(--line);padding:40px 0 32px;background:rgba(10,7,20,.7);font-size:13.5px;color:var(--mute)}
+footer .foot{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+footer .fh{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ice);margin:0 0 12px;font-weight:500}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+footer a{text-decoration:none;color:var(--text);overflow-wrap:anywhere}
+footer a:hover{color:var(--ice)}
+footer .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin-top:30px;padding-top:20px;border-top:1px solid var(--line)}
+@media (max-width:760px){footer .foot{grid-template-columns:1fr}footer{padding-bottom:96px}}
+
+/* tighter joins (Services → Why it works, FAQ → Contact) */
+section.statement,section#contact{padding-top:clamp(44px,4vw,56px)}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -249,20 +340,36 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="#top" aria-label="JM Digital Marketing"><img src="jm-logo.webp" alt="" width="360" height="255"><span>Digital<b>Marketing</b></span></a>
+    <a class="brand" href="#top" aria-label="JM Digital Marketing — back to top"><img src="jm-logo.webp" alt="" width="360" height="250"><span>Digital<b>Marketing</b></span></a>
     <nav class="nav-links" aria-label="Main">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
       <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
       <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <a class="btn btn-ghost" href="#contact">Let's talk <span class="arr">↗</span></a>
+    <div class="nav-right">
+      <a class="btn btn-solid js-demo" href="https://wa.me/923130709941?text=Hi%20Junaid%2C%20I'd%20like%20a%20free%20demo%20for%20my%20business." target="_blank" rel="noopener">Get a Free Demo <span class="arr">↗</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu"><span></span></button>
+    </div>
   </div>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+    <div class="wrap">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#process">Process</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-solid js-demo" href="https://wa.me/923130709941?text=Hi%20Junaid%2C%20I'd%20like%20a%20free%20demo%20for%20my%20business." target="_blank" rel="noopener">Get a Free Demo <span class="arr">↗</span></a>
+    </div>
+  </nav>
 </header>
 
 <main id="top">
 
-<section class="hero">
+<section class="hero" id="about">
   <div class="wrap">
     <div class="hero-grid">
       <div>
@@ -270,9 +377,14 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <h1>Built to bring you <em>customers.</em></h1>
         <p class="lede">JM Digital Marketing designs websites, builds apps and business software, and runs the ads and SEO that send people to them. One team, from first click to paid invoice.</p>
         <div class="cta-row">
-          <a class="btn btn-solid" href="#contact">Get a free website audit <span class="arr">↗</span></a>
-          <a class="btn btn-ghost" href="#work">See our work <span class="arr">↗</span></a>
+          <a class="btn btn-solid js-demo" href="https://wa.me/923130709941?text=Hi%20Junaid%2C%20I'd%20like%20a%20free%20demo%20for%20my%20business." target="_blank" rel="noopener">Get My Free Demo <span class="arr">→</span></a>
+          <a class="btn btn-ghost" href="#pricing">See Pricing — from £150</a>
         </div>
+        <ul class="points">
+          <li>Free demo, no obligation</li>
+          <li>Live in 2 days</li>
+          <li>30% advance, 70% after completion</li>
+        </ul>
       </div>
       <div class="stage" data-stage="hero">
         <span class="stage-tag" aria-hidden="true">Web &amp; apps</span>
@@ -284,9 +396,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
       </div>
     </div>
     <div class="stats">
-      <div class="stat"><b>3+</b><span>years building for local businesses</span></div>
-      <div class="stat"><b>250+</b><span>projects delivered</span></div>
-      <div class="stat"><b>8</b><span>services under one roof</span></div>
+      <div class="stat"><b>4 yrs</b><span>Helping car recovery businesses get more jobs</span></div>
+      <div class="stat"><b>2 days</b><span>Typical turnaround for a standard website</span></div>
+      <div class="stat"><b>£150</b><span>One-off website build, domain &amp; hosting year 1 included</span></div>
+      <div class="stat"><b>£0</b><span>Cost of your free demo — no obligation</span></div>
     </div>
   </div>
 </section>
@@ -310,7 +423,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p class="eyebrow">01 / Services</p>
         <h2>Eight services. <em>One team.</em></h2>
       </div>
-      <p class="lede">Pick a service and watch it take shape. Each one is priced as a fixed quote before any work starts.</p>
+      <p class="lede">Pick a service and watch it take shape. Standard website pricing is fixed — £150 one-off. Larger or custom work is quoted as one fixed price before any work starts, so the quote you approve is the amount you pay.</p>
     </div>
 
     <div class="svc">
@@ -361,25 +474,13 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <p class="eyebrow">02 / Selected work</p>
         <h2>Recent <em>builds.</em></h2>
       </div>
-      <p class="lede">Websites and software for real businesses in the UK and Pakistan.</p>
+      <p class="lede">Live work you can open and try for yourself.</p>
     </div>
-    <div class="work-grid">
-      <a class="card" href="https://var-solutions.vercel.app" target="_blank" rel="noopener">
-        <div class="shot s1"><div class="ui"><div class="bar"><s></s><s></s><s></s></div><div class="l big"></div><div class="l" style="width:78%"></div><div class="pill"></div><div class="row"><div></div><div></div><div></div></div></div></div>
-        <div class="card-body"><div><h3>VAR Solutions</h3><p>Website for a mobile smart-repair business in South Wales.</p></div><span class="tag">Website ↗</span></div>
-      </a>
+    <div class="work-grid single">
       <a class="card" href="https://dental-saas-lac.vercel.app" target="_blank" rel="noopener">
-        <div class="shot s2"><div class="ui"><div class="bar"><s></s><s></s><s></s></div><div class="row"><div></div><div></div><div></div></div><div class="l" style="width:90%"></div><div class="l" style="width:70%"></div><div class="l" style="width:82%"></div></div></div>
-        <div class="card-body"><div><h3>DentEase</h3><p>Clinic management system: appointments, patients, billing.</p></div><span class="tag">Software ↗</span></div>
+        <div class="shot s2"><img src="work-dentease.webp" alt="DentEase clinic management dashboard showing today's patients, revenue, pending fees and recent patients" width="1440" height="900" loading="lazy" decoding="async"></div>
+        <div class="card-body"><div><h3>DentEase</h3><p>Clinic management software: appointments, patient records, billing and reports. Designed and built by JM.</p></div><span class="tag">Software ↗</span></div>
       </a>
-      <div class="card">
-        <div class="shot s3"><div class="ui"><div class="bar"><s></s><s></s><s></s></div><div class="row"><div></div><div></div><div></div></div><div class="row"><div></div><div></div><div></div></div><div class="pill"></div></div></div>
-        <div class="card-body"><div><h3>SliceByte POS</h3><p>Web-based point of sale for a pizza and burger shop.</p></div><span class="tag">EPOS</span></div>
-      </div>
-      <div class="card">
-        <div class="shot s4"><div class="ui"><div class="bar"><s></s><s></s><s></s></div><div class="l big" style="width:48%"></div><div class="l" style="width:66%"></div><div class="row"><div></div><div></div><div></div></div></div></div>
-        <div class="card-body"><div><h3>AK Getaways</h3><p>Homepage redesign for UK serviced apartments.</p></div><span class="tag">Redesign</span></div>
-      </div>
     </div>
   </div>
 </section>
@@ -401,15 +502,65 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
   </div>
 </section>
 
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <p class="eyebrow">04 / Pricing</p>
+        <h2>Clear prices. <em>No surprises.</em></h2>
+      </div>
+    </div>
+    <div class="price-grid">
+      <div class="plan">
+        <h3>Free Demo</h3>
+        <p class="price"><b>£0</b><span>/ no obligation</span></p>
+        <p class="line">See your website before you commit.</p>
+        <ul>
+          <li>Working preview in your branding</li>
+          <li>Built around your services</li>
+          <li>Honest feedback on your Google presence</li>
+        </ul>
+        <a class="btn btn-ghost js-demo" href="https://wa.me/923130709941?text=Hi%20Junaid%2C%20I'd%20like%20a%20free%20demo%20for%20my%20business." target="_blank" rel="noopener">Request my free demo <span class="arr">↗</span></a>
+      </div>
+      <div class="plan pop">
+        <span class="badge">Most popular</span>
+        <h3>Business Website</h3>
+        <p class="price"><b>£150</b><span>/ one-off</span></p>
+        <p class="line">The full build, live in about 2 days.</p>
+        <ul>
+          <li>Mobile-first website in your branding</li>
+          <li>Domain + hosting included for year 1</li>
+          <li>Tap-to-call, WhatsApp &amp; enquiry form</li>
+          <li>Google-friendly setup included</li>
+        </ul>
+        <a class="btn btn-solid" href="#contact">Get started <span class="arr">↗</span></a>
+      </div>
+      <div class="plan">
+        <h3>Growth Plan</h3>
+        <p class="price"><b>£200</b><span>/ month from</span></p>
+        <p class="line">For businesses that want steady enquiries.</p>
+        <ul>
+          <li>Google Business Profile management</li>
+          <li>Google Ads management</li>
+          <li>Ongoing website updates</li>
+          <li>Monthly reporting in plain English</li>
+        </ul>
+        <a class="btn btn-ghost" href="#contact">Get started <span class="arr">↗</span></a>
+      </div>
+    </div>
+    <p class="fine">Standard terms: 30% advance, 70% after completion. Domain and hosting renewal is payable yearly from year two.</p>
+  </div>
+</section>
+
 <section id="faq">
   <div class="wrap faq">
     <div>
-      <p class="eyebrow">04 / Questions</p>
+      <p class="eyebrow">05 / Questions</p>
       <h2>Before you <em>ask.</em></h2>
     </div>
     <div>
-      <details open><summary>How much does a website cost?</summary><p>It depends on the number of pages and features. After the free audit you get one fixed price, so the quote you approve is the amount you pay.</p></details>
-      <details><summary>How long does a project take?</summary><p>A business website usually takes one to two weeks. Apps, EPOS and clinic systems take longer and are delivered in stages you can test.</p></details>
+      <details open><summary>How much does a website cost?</summary><p>A standard business website is £150 one-off. That covers the full build, plus your domain and hosting for the first year. From year two, domain and hosting renewal is payable yearly. There is nothing monthly unless you choose an ongoing growth plan.</p></details>
+      <details><summary>How long does a project take?</summary><p>Most standard websites are ready in 2 days once we have your details — your services, photos and logo, or we can work from your public listings and social pages. Larger or custom builds take longer, and we'll tell you the honest timescale before we start.</p></details>
       <details><summary>Do you work with businesses outside Pakistan?</summary><p>Yes. Most of our website and ads work is for businesses in the UK and UAE. Everything is handled over WhatsApp and email.</p></details>
       <details><summary>Can you run ads for a site you did not build?</summary><p>Yes. We check the landing page first, because sending paid clicks to a slow or unclear page wastes your budget.</p></details>
       <details><summary>What happens after I send an enquiry?</summary><p>You get a reply on WhatsApp with a short audit or a few questions about what you need, then a quote.</p></details>
@@ -420,13 +571,19 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 <section id="contact">
   <div class="wrap contact">
     <div>
-      <p class="eyebrow">05 / Start a project</p>
+      <p class="eyebrow">06 / Start a project</p>
       <h2>Tell us what you need. <em>We'll take it from there.</em></h2>
-      <p class="lede">Fill in the form and it opens WhatsApp with your message ready to send. Or message us directly.</p>
+      <p class="lede">Fill in the form and it opens WhatsApp with your message ready to send. Or contact us directly.</p>
       <div class="direct">
         <b>WhatsApp</b>
-        <span>+92 313 0709941</span>
-        <b style="margin-top:14px">Founder</b>
+        <a class="js-wa" href="https://wa.me/923130709941?text=Hi%20JM%20Digital%20Marketing%2C%20I%20am%20interested%20in%3A%20Web%20development" target="_blank" rel="noopener">+92 313 0709941</a>
+        <b>Phone</b>
+        <a href="tel:+923130709941">+92 313 0709941</a>
+        <b>Email</b>
+        <a href="mailto:junaidmazharofficial541@gmail.com">junaidmazharofficial541@gmail.com</a>
+        <b>Instagram</b>
+        <a href="https://www.instagram.com/jm_digitalmarketing_official" target="_blank" rel="noopener">@jm_digitalmarketing_official</a>
+        <b>Founder</b>
         <span>Junaid Mazhar</span>
       </div>
     </div>
@@ -435,19 +592,22 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
         <label for="f-name">Your name<input id="f-name" name="name" autocomplete="name" placeholder="Full name"></label>
         <label for="f-biz">Business<input id="f-biz" name="business" autocomplete="organization" placeholder="Business name"></label>
       </div>
-      <label for="f-svc">What can we help with?
-        <select id="f-svc" name="service">
-          <option>Web development</option>
-          <option>App development</option>
-          <option>Web app development</option>
-          <option>EPOS system</option>
-          <option>Clinic management software</option>
-          <option>Search engine optimisation</option>
-          <option>CPC ads</option>
-          <option>Meta ads</option>
-          <option>Free website audit</option>
-        </select>
-      </label>
+      <div class="f2">
+        <label for="f-svc">What can we help with?
+          <select id="f-svc" name="service">
+            <option>Web development</option>
+            <option>App development</option>
+            <option>Web app development</option>
+            <option>EPOS systems</option>
+            <option>Clinic management software</option>
+            <option>Search engine optimisation</option>
+            <option>CPC ads</option>
+            <option>Meta ads</option>
+            <option>Free website audit</option>
+          </select>
+        </label>
+        <label for="f-email">Email (optional)<input id="f-email" name="email" type="email" autocomplete="email" placeholder="you@business.co.uk"></label>
+      </div>
       <label for="f-msg">A little about your project<textarea id="f-msg" name="message" placeholder="Your website link, what you want built, any deadline"></textarea></label>
       <a class="btn btn-solid" id="waLink" href="https://wa.me/923130709941" target="_blank" rel="noopener">Send on WhatsApp <span class="arr">↗</span></a>
       <small>Opens WhatsApp with your message filled in. Nothing is sent until you press send there.</small>
@@ -459,10 +619,41 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 JM Digital Marketing · Smart solutions. Real results.</span>
-    <span>Mirpur, Azad Kashmir · Working with clients in the UK and UAE</span>
+    <div class="foot">
+      <div>
+        <p class="fh">Contact</p>
+        <ul>
+          <li><a class="js-wa" href="https://wa.me/923130709941?text=Hi%20JM%20Digital%20Marketing%2C%20I%20am%20interested%20in%3A%20Web%20development" target="_blank" rel="noopener">WhatsApp +92 313 0709941</a></li>
+          <li><a href="tel:+923130709941">Call +92 313 0709941</a></li>
+          <li><a href="mailto:junaidmazharofficial541@gmail.com">junaidmazharofficial541@gmail.com</a></li>
+          <li><a href="https://www.instagram.com/jm_digitalmarketing_official" target="_blank" rel="noopener">Instagram @jm_digitalmarketing_official</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="fh">Explore</p>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="fh">Based in</p>
+        <p>Mirpur, Azad Kashmir · Working with clients in the UK and UAE</p>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 JM Digital Marketing · Smart Solutions. Real Results.</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
   </div>
 </footer>
+
+<a class="wa-float js-wa" id="waFloat" href="https://wa.me/923130709941?text=Hi%20JM%20Digital%20Marketing%2C%20I%20am%20interested%20in%3A%20Web%20development" target="_blank" rel="noopener" aria-label="Message JM Digital Marketing on WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true" fill="currentColor"><path d="M16.04 3C8.86 3 3.03 8.82 3.03 16c0 2.29.6 4.53 1.74 6.5L3 29l6.68-1.75A13 13 0 0 0 16.04 29C23.2 29 29 23.18 29 16S23.2 3 16.04 3Zm0 23.8c-2.01 0-3.98-.54-5.7-1.56l-.41-.24-3.97 1.04 1.06-3.86-.27-.4a10.78 10.78 0 0 1-1.65-5.78c0-5.96 4.86-10.81 10.94-10.81 5.96 0 10.8 4.85 10.8 10.81 0 5.96-4.84 10.8-10.8 10.8Zm5.93-8.09c-.33-.16-1.93-.95-2.23-1.06-.3-.11-.52-.16-.73.17-.22.32-.84 1.05-1.03 1.27-.19.22-.38.24-.7.08-.33-.16-1.38-.51-2.62-1.62-.97-.86-1.62-1.93-1.81-2.25-.19-.33-.02-.5.14-.66.15-.15.33-.38.49-.57.16-.19.22-.33.33-.54.11-.22.05-.41-.03-.57-.08-.16-.73-1.76-1-2.41-.26-.63-.53-.55-.73-.56h-.62c-.22 0-.57.08-.87.41-.3.32-1.14 1.11-1.14 2.71 0 1.6 1.17 3.15 1.33 3.36.16.22 2.3 3.51 5.57 4.92.78.34 1.39.54 1.86.69.78.25 1.49.21 2.05.13.63-.09 1.93-.79 2.2-1.55.27-.76.27-1.41.19-1.55-.08-.14-.3-.22-.62-.38Z"/></svg>
+</a>
 
 <script>
 /* ---------- page logic (works without WebGL) ---------- */
@@ -529,14 +720,47 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 
   /* enquiry form -> WhatsApp link */
   var form=document.getElementById('enquiry'), wa=document.getElementById('waLink');
+  /* default (empty form):  "Hi JM Digital Marketing, I am interested in: Web development"
+     personalised:          "Hi JM Digital Marketing, I'm Name from Business. I am interested in: Service." */
   function build(){
-    var n=form.name.value.trim(), b=form.business.value.trim(), s=form.service.value, m=form.message.value.trim();
-    var msg='Hi JM Digital Marketing,'+(n?" I'm "+n:'')+(b?' from '+b:'')+'.'+' I am interested in: '+s+'.'+(m?'\n\n'+m:'');
+    var n=form.name.value.trim(), b=form.business.value.trim(), s=form.service.value,
+        e=form.email.value.trim(), m=form.message.value.trim();
+    var who='';
+    if(n&&b){who=" I'm "+n+' from '+b+'.';}
+    else if(n){who=" I'm "+n+'.';}
+    else if(b){who=" I'm from "+b+'.';}
+    var msg='Hi JM Digital Marketing,'+who+' I am interested in: '+s+(who?'.':'');
+    if(e){msg+='\nEmail: '+e;}
+    if(m){msg+='\n\n'+m;}
     wa.href='https://wa.me/923130709941?text='+encodeURIComponent(msg);
   }
   form.addEventListener('input',build);
+  form.addEventListener('change',build);
   form.addEventListener('submit',function(e){e.preventDefault();build();});
   build();
+
+  /* mobile menu */
+  var mb=document.getElementById('menuBtn'), mm=document.getElementById('mobileMenu');
+  function setMenu(open){
+    mb.setAttribute('aria-expanded',open);mb.setAttribute('aria-label',open?'Close menu':'Open menu');
+    mm.setAttribute('data-open',open);
+  }
+  mb.addEventListener('click',function(){setMenu(mb.getAttribute('aria-expanded')!=='true');});
+  [].forEach.call(mm.querySelectorAll('a'),function(a){a.addEventListener('click',function(){setMenu(false);});});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mb.getAttribute('aria-expanded')==='true'){setMenu(false);mb.focus();}});
+  window.addEventListener('resize',function(){if(window.innerWidth>820)setMenu(false);});
+
+  /* floating WhatsApp: step aside only while it would sit on top of the form's own WhatsApp button */
+  var fl=document.getElementById('waFloat');
+  function overlap(a,b){return !(a.right<b.left||a.left>b.right||a.bottom<b.top||a.top>b.bottom);}
+  function checkFloat(){
+    var f=fl.getBoundingClientRect(), w=wa.getBoundingClientRect();
+    var pad={left:f.left-8,right:f.right+8,top:f.top-8,bottom:f.bottom+8};
+    fl.classList.toggle('is-hidden',overlap(pad,w));
+  }
+  window.addEventListener('scroll',checkFloat,{passive:true});
+  window.addEventListener('resize',checkFloat);
+  checkFloat();
 })();
 </script>
 
