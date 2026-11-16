@@ -173,6 +173,9 @@ section{padding:clamp(70px,9vw,130px) 0}
 .svc-nav button{all:unset;cursor:pointer;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;transition:border-color .2s}
 .svc-nav button:hover{border-color:var(--ice)}
 .svc-nav button:focus-visible{outline:2px solid var(--signal);outline-offset:2px}
+.all-svc{margin:-20px 0 34px}
+.all-svc a{font-size:14.5px;font-weight:600;color:var(--signal);text-decoration:none}
+.all-svc a:hover{color:var(--ice)}
 .svc-nav a{margin-left:auto;font-size:13.5px;font-weight:600;color:var(--signal);text-decoration:none}
 @media (max-width:1040px){
   .svc{grid-template-columns:1fr;gap:18px}
@@ -425,6 +428,7 @@ section.statement,section#contact{padding-top:clamp(44px,4vw,56px)}
       </div>
       <p class="lede">Pick a service and watch it take shape. Standard website pricing is fixed — £150 one-off. Larger or custom work is quoted as one fixed price before any work starts, so the quote you approve is the amount you pay.</p>
     </div>
+    <p class="all-svc"><a href="/services">See every service in detail <span class="arr">→</span></a></p>
 
     <div class="svc">
       <div class="svc-list" role="tablist" aria-label="Services" id="svcList">
@@ -632,7 +636,7 @@ section.statement,section#contact{padding-top:clamp(44px,4vw,56px)}
       <div>
         <p class="fh">Explore</p>
         <ul>
-          <li><a href="#services">Services</a></li>
+          <li><a href="/services">Services</a></li>
           <li><a href="#work">Work</a></li>
           <li><a href="#pricing">Pricing</a></li>
           <li><a href="#faq">FAQ</a></li>
